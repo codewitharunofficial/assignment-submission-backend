@@ -10,7 +10,7 @@ const PORT = 4050;
 
 dotenv.config();
 
-await connectToDB();
+connectToDB();
 
 app.use(
   cors({
