@@ -45,7 +45,7 @@ export default async function submit(req, res) {
       });
 
       if (results) {
-        const assignment = new assignment({
+        const newAssignment = new assignment({
           program: program,
           program_code: program_code,
           enrollment_no: enrollment_no,
@@ -54,13 +54,13 @@ export default async function submit(req, res) {
           submission_id: submissioId,
         });
 
-        await assignment.save();
+        await newAssignment.save();
 
         res.status(200).send({
           success: true,
           message: "Project Submitted Successfully",
           data: {
-            assignment,
+            newAssignment,
           },
         });
       }
