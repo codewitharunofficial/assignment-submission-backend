@@ -1,6 +1,6 @@
 import cloudinary from "../../DB/cloudinary.js";
 import { dummyUsers } from "../../dummyData.js";
-import assignment from "../../models/assignment.js";
+import assignment from "../../models/AssinmentModel.js";
 
 export default async function submit(req, res) {
   try {
