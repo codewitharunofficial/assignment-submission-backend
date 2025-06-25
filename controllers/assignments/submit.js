@@ -7,7 +7,7 @@ export default async function submit(req, res) {
     const { enrollment_no, program, program_code, remark } = req.fields;
     const { project_file } = req.files;
 
-    console.log(req.files);
+    // console.log(req.files.name);
 
     if (!program || !enrollment_no || !project_file || !program_code) {
       res.status(400).send({
