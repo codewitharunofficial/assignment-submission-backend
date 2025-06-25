@@ -25,6 +25,10 @@ app.use(express.json());
 app.use("/api/v1/auth", AuthRoutes);
 app.use("/api/v1/assignment", AssignmentRoutes);
 
+app.get("/keep-alive", async (req, res) => {
+  res.status(200).send({ success: true, message: "Server Is Alive" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server Is Running at: http://localhost:${PORT}`);
 });
