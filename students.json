@@ -1,0 +1,222 @@
+[
+  {
+    "enrollment_no": "ENR0001",
+    "name": "Riya Verma",
+    "dob": "2002-07-12",
+    "gender": "Female",
+    "email": "riya.verma@example.com",
+    "address": "45 Green Park, Delhi, India",
+    "phone": "+91-9812345678",
+    "course": "BCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0002",
+    "name": "Aman Singh",
+    "dob": "2001-05-03",
+    "gender": "Male",
+    "email": "aman.singh@example.com",
+    "address": "12 Sector 10, Noida, UP",
+    "phone": "+91-9898765432",
+    "course": "BBA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0003",
+    "name": "Meena Joshi",
+    "dob": "2003-01-19",
+    "gender": "Female",
+    "email": "meena.joshi@example.com",
+    "address": "88 MG Road, Pune, Maharashtra",
+    "phone": "+91-9923456789",
+    "course": "MCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0004",
+    "name": "Karan Mehta",
+    "dob": "2000-11-28",
+    "gender": "Male",
+    "email": "karan.mehta@example.com",
+    "address": "56 Lake View, Ahmedabad, Gujarat",
+    "phone": "+91-9988776655",
+    "course": "BCA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0005",
+    "name": "Sneha Patil",
+    "dob": "2002-03-15",
+    "gender": "Female",
+    "email": "sneha.patil@example.com",
+    "address": "101 Narayan Peth, Pune",
+    "phone": "+91-9789012345",
+    "course": "MCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0006",
+    "name": "Rohit Sharma",
+    "dob": "2001-09-07",
+    "gender": "Male",
+    "email": "rohit.sharma@example.com",
+    "address": "78 Janakpuri, New Delhi",
+    "phone": "+91-9812233445",
+    "course": "BBA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0007",
+    "name": "Anjali Gupta",
+    "dob": "2003-02-11",
+    "gender": "Female",
+    "email": "anjali.gupta@example.com",
+    "address": "33 Sector 22, Chandigarh",
+    "phone": "+91-9845123456",
+    "course": "BCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0008",
+    "name": "Dev Patel",
+    "dob": "2000-06-26",
+    "gender": "Male",
+    "email": "dev.patel@example.com",
+    "address": "221B Baker St, Surat",
+    "phone": "+91-9765432100",
+    "course": "MCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0009",
+    "name": "Neha Rathi",
+    "dob": "2002-10-21",
+    "gender": "Female",
+    "email": "neha.rathi@example.com",
+    "address": "12 Railway Colony, Jaipur",
+    "phone": "+91-9933445566",
+    "course": "BBA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0010",
+    "name": "Vikram Jain",
+    "dob": "2001-08-12",
+    "gender": "Male",
+    "email": "vikram.jain@example.com",
+    "address": "9 Main Road, Indore",
+    "phone": "+91-9876554321",
+    "course": "BCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0011",
+    "name": "Pooja Rao",
+    "dob": "2003-12-30",
+    "gender": "Female",
+    "email": "pooja.rao@example.com",
+    "address": "65 Marine Drive, Mumbai",
+    "phone": "+91-9823451234",
+    "course": "MCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0012",
+    "name": "Manish Tiwari",
+    "dob": "2000-04-18",
+    "gender": "Male",
+    "email": "manish.tiwari@example.com",
+    "address": "44 Tagore Garden, Delhi",
+    "phone": "+91-9876123456",
+    "course": "BBA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0013",
+    "name": "Swati Singh",
+    "dob": "2002-05-25",
+    "gender": "Female",
+    "email": "swati.singh@example.com",
+    "address": "99 Shivaji Nagar, Bhopal",
+    "phone": "+91-9955123412",
+    "course": "BCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0014",
+    "name": "Arjun Kapoor",
+    "dob": "2001-07-09",
+    "gender": "Male",
+    "email": "arjun.kapoor@example.com",
+    "address": "11 MG Marg, Lucknow",
+    "phone": "+91-9872345671",
+    "course": "MCA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0015",
+    "name": "Divya Nair",
+    "dob": "2003-11-22",
+    "gender": "Female",
+    "email": "divya.nair@example.com",
+    "address": "5 IT Park, Trivandrum",
+    "phone": "+91-9811198765",
+    "course": "BBA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0016",
+    "name": "Harsh Vardhan",
+    "dob": "2000-01-14",
+    "gender": "Male",
+    "email": "harsh.vardhan@example.com",
+    "address": "32 Race Course Rd, Dehradun",
+    "phone": "+91-9922334455",
+    "course": "BCA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0017",
+    "name": "Isha D’Souza",
+    "dob": "2002-08-08",
+    "gender": "Female",
+    "email": "isha.dsouza@example.com",
+    "address": "4 Vasco St, Goa",
+    "phone": "+91-9887766554",
+    "course": "MCA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0018",
+    "name": "Rajat Bansal",
+    "dob": "2001-02-19",
+    "gender": "Male",
+    "email": "rajat.bansal@example.com",
+    "address": "14 Lake Town, Kolkata",
+    "phone": "+91-9844012345",
+    "course": "BBA",
+    "isRegistered": true
+  },
+  {
+    "enrollment_no": "ENR0019",
+    "name": "Tanvi Khanna",
+    "dob": "2003-06-02",
+    "gender": "Female",
+    "email": "tanvi.khanna@example.com",
+    "address": "17 HSR Layout, Bangalore",
+    "phone": "+91-9812312345",
+    "course": "BCA",
+    "isRegistered": false
+  },
+  {
+    "enrollment_no": "ENR0020",
+    "name": "Nikhil Reddy",
+    "dob": "2000-09-27",
+    "gender": "Male",
+    "email": "nikhil.reddy@example.com",
+    "address": "22 Banjara Hills, Hyderabad",
+    "phone": "+91-9911223344",
+    "course": "MCA",
+    "isRegistered": true
+  }
+]
