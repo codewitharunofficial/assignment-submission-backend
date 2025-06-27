@@ -1,6 +1,7 @@
 import cloudinary from "../../DB/cloudinary.js";
 import { dummyUsers } from "../../dummyData.js";
 import assignment from "../../models/AssinmentModel.js";
+import StudentModel from "../../models/StudentModel.js";
 
 export default async function submit(req, res) {
   try {
@@ -25,9 +26,12 @@ export default async function submit(req, res) {
         message: "Max File Size allowed is 2MB",
       });
     } else {
-      const user = dummyUsers.find((item) => item.enrollment === enrollment_no);
+      const student = await StudentModel.findOne({
+        enrollment_no: enrollment_no,
+        dob: dob,
+      });
 
-      if (!user) {
+      if (!student) {
         return res.status(401).send({
           success: false,
           message: "No Student With The Enrollment Found",
