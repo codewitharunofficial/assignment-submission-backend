@@ -41,7 +41,7 @@ export default async function submit(req, res) {
         public_id: `${enrollment_no}_${Math.floor(
           Math.random() * 9000 + 1000
         )}_file`,
-        resource_type: "auto",
+        resource_type: "raw",
       });
 
       if (results) {
