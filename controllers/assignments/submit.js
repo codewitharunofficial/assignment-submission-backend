@@ -28,7 +28,6 @@ export default async function submit(req, res) {
     } else {
       const student = await StudentModel.findOne({
         enrollment_no: enrollment_no,
-        dob: dob,
       });
 
       if (!student) {
