@@ -12,6 +12,6 @@ router.use(
 );
 
 router.post("/submit", ExpressFormidable(), submit);
-router.get("/fetch", fetchAssignments);
+router.post("/fetch", fetchAssignments);
 
 export default router;
