@@ -27,9 +27,10 @@ const AssignmentSchema = new mongoose.Schema(
       required: true,
     },
     evaluator: {
-      type: Object,
-      required: false
-    }
+      type: mongoose.Schema.ObjectId,
+      required: false,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );
