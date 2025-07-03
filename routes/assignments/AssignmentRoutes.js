@@ -3,6 +3,7 @@ import submit from "../../controllers/assignments/submit.js";
 import ExpressFormidable from "express-formidable";
 import fetchAssignments from "../../controllers/assignments/fetch.js";
 import fetchAllAssignments from "../../controllers/assignments/fetchAll.js";
+import AssinmentModel from "../../models/AssinmentModel.js";
 
 const router = express.Router();
 // router.use(ExpressFormidable());
@@ -17,12 +18,12 @@ router.post("/fetch", fetchAssignments);
 router.get("/fetch-all", fetchAllAssignments);
 
 router.post("/assign", async (req, res) => {
-  const { id } = req.query;
-  const { projectIds } = req.body;
+  const { evaluatorId } = req.query;
+  const { projectId } = req.body;
 
   try {
-    await Evaluator.findByIdAndUpdate(id, {
-      $addToSet: { assignedProjects: { $each: projectIds } },
+    await AssinmentModel.findByIdAndUpdate(projectId, {
+      $addToSet: { assignedProjects: { $each: evaluatorId } },
     });
     res.status(200).send({ success: true });
   } catch (err) {
