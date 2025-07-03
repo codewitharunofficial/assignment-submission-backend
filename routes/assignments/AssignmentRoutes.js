@@ -2,7 +2,6 @@ import express from "express";
 import submit from "../../controllers/assignments/submit.js";
 import ExpressFormidable from "express-formidable";
 import fetchAssignments from "../../controllers/assignments/fetch.js";
-import Evaluator from "../../models/Evaluator.js";
 import fetchAllAssignments from "../../controllers/assignments/fetchAll.js";
 
 const router = express.Router();

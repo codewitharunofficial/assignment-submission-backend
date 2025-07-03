@@ -26,6 +26,10 @@ const AssignmentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    evaluator: {
+      type: Object,
+      required: false
+    }
   },
   { timestamps: true }
 );

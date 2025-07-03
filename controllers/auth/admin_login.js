@@ -1,4 +1,4 @@
-import AdminModel from "../../models/AdminModel.js";
+import UserModel from "../../models/UserModel.js";
 
 export default async function adminLogin(req, res) {
   try {

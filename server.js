@@ -5,7 +5,6 @@ import AssignmentRoutes from "./routes/assignments/AssignmentRoutes.js";
 import connectToDB from "./DB/database.js";
 import dotenv from "dotenv";
 import NotificationRoutes from "./routes/notifications/NotificationRoutes.js";
-import EvaluatorRoute from "./routes/evaluators/evaluators.js";
 
 const app = express();
 const PORT = 4050;
@@ -27,7 +26,6 @@ app.use(express.json());
 app.use("/api/v1/auth", AuthRoutes);
 app.use("/api/v1/assignment", AssignmentRoutes);
 app.use("/api/v1/notifications", NotificationRoutes);
-app.use("/api/v1/evaluators", EvaluatorRoute);
 
 app.get("/keep-alive", async (req, res) => {
   res.status(200).send({ success: true, message: "Server Is Alive" });
