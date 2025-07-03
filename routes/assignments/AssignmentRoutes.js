@@ -64,7 +64,8 @@ router.get("/get-assigned", async (req, res) => {
     } else {
       const assignments = await AssinmentModel.find({
         evaluator: evaluatorId,
-      }).select("updatedAt:-1");
+      });
+      console.log(assignments)
       if (assignments?.length === 0) {
         return res.status(302).send({
           success: false,
