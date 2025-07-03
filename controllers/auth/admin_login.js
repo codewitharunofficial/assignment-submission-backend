@@ -10,7 +10,7 @@ export default async function adminLogin(req, res) {
         message: "All Fields Are Required",
       });
     } else {
-      const admin = await AdminModel.findOne({
+      const admin = await UserModel.findOne({
         userId: userId,
         password: password,
       });
