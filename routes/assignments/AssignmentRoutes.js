@@ -42,13 +42,32 @@ router.post("/bulk-assign", async (req, res) => {
   const { evaluatorId } = req.query;
   const { projectIds } = req.body;
 
+  // console.log(evaluatorId, projectIds);
+
   try {
-    await AssinmentModel.findByIdAndUpdate(projectId, {
-      $addToSet: { assignedProjects: { $each: evaluatorId } },
+    if (!evaluatorId || !projectIds) {
+      return res
+        .status(500)
+        .send({ success: false, message: "Required All Fields" });
+    }
+
+    const assingnments = [];
+
+    for (let projectId of projectIds) {
+      const project = await AssinmentModel.findByIdAndUpdate(projectId, {
+        evaluator: evaluatorId,
+      });
+
+      assingnments.push(project);
+    }
+    res.status(200).send({
+      success: true,
+      message: "Projects Assigned Successfully",
+      assingnments,
     });
-    res.status(200).send({ success: true });
   } catch (err) {
-    res.status(500).send({ error: "Assignment failed" });
+    console.log(err)
+    res.status(500).send({ success: false, message: "Assignment failed", err });
   }
 });
 
@@ -65,7 +84,7 @@ router.get("/get-assigned", async (req, res) => {
       const assignments = await AssinmentModel.find({
         evaluator: evaluatorId,
       });
-      console.log(assignments)
+      console.log(assignments);
       if (assignments?.length === 0) {
         return res.status(302).send({
           success: false,
