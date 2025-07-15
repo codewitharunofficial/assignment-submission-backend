@@ -40,6 +40,17 @@ export default async function submit(req, res) {
       const submissioId =
         `${enrollment_no}${program}${program_code}`.replaceAll("-", "");
 
+      const existingAssignment = await assignment.findOne({
+        submission_id: submissioId,
+      });
+
+      if (existingAssignment) {
+        return res.status(400).send({
+          success: false,
+          message: "Assignment Already Exists",
+        });
+      }
+
       const results = await cloudinary.uploader.upload(project_file.path, {
         public_id: `${enrollment_no}_${Math.floor(
           Math.random() * 9000 + 1000

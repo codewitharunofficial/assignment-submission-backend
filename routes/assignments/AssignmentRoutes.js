@@ -42,8 +42,6 @@ router.post("/bulk-assign", async (req, res) => {
   const { evaluatorId } = req.query;
   const { projectIds } = req.body;
 
-  // console.log(evaluatorId, projectIds);
-
   try {
     if (!evaluatorId || !projectIds) {
       return res
